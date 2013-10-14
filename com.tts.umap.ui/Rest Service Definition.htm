@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Windows (vers 14 February 2006), see www.w3.org" />
+    <title>
+      API for the UMAP Rest Service
+    </title>
+  </head>
+  <body>
+    <h2>
+      The API for the UMAP Rest Service is as follows.
+    </h2>
+    <p>
+      <h3>Abbreviations:</h3>
+    </p>
+    <ul>
+      <li>HOST - the SAP Target Host which can be set in <strong>Window -&gt;
+      Preferences -&gt; Umal 2 Abap Preferences</strong><br>
+	  The URI has to start with <strong>protocol://domain//furtherPath/umap</strong>
+      </li>
+    </ul>
+    <p>
+      <h3>Service Definition:</h3>
+    </p>
+    <p>
+      <strong>GET HOST/umap</strong><br>
+	  is the main Service which will do nothing in the moment
+      it, it will return an XML list of available Services in the form:<br> This
+      Service can be called as a Test in the Preference Page.
+    </p>
+    <p>
+      <strong>GET HOST/umap/transportRequests</strong><br>
+	  Returns a XML List of available Workbench Transport Requests for the logged in user or an empty List.<br>
+      Data Structure: <br>
+      &lt?xml version="1.0" encoding="utf-8"?&gt<br>
+      &ltrequestlist&gt<br>
+      &ltrequest id="request number"&gt<br>
+      &ltowner&gt
+      Owner Name
+      &lt/owner&gt<br>
+      &ltname&gt
+      Request Name
+      &lt/name&gt<br>
+      &lt/request&gt<br>
+      &lt/requestlist&gt<br>
+	  
+    </p>
+    <p>
+      <strong>GET HOST/umap/developmentClass?namespace=value</strong> <br>Returns an XML List of Customer
+      Development Classes or an empty list.<br>
+      Parameter Description:<br>
+      namespace = value - represents an search string to restriced the seleced development classes, this parameter is optional. Not passing this parameter may result in a long runtime and a possible timeout<br>
+      
+      Example:<br>
+      namespace=ZPL
+      Data Structure:<br>
+      Name | Description<br>
+    </p>
+    
+    [User]^[Eclipse]
+[User]-(Enter Package Abreviation)
+[Eclipse]>(Request Packages)
+[Eclipse]>(Request Transport List)
+[User]-(Selects Package and Transport)
+    
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            objectClass="org.eclipse.core.resources.IFile"
+            nameFilter="*.uml"
+            id="com.tts.umap.ui.popupMenus.contribution.IFile">
+         <menu id="org.eclipse.acceleo.module.menu" label="%menu.label" path="additionsAcceleo">
+               <groupMarker name="acceleo"/> 
+         </menu>
+         <action
+               class="com.tts.umap.ui.popupMenus.AcceleoGenerateAbap2umlAction"
+               enablesFor="+"
+               id="com.tts.abap2uml.ui.popupMenus.acceleoGenerateAbap2umlAction"
+               icon="icons/default.gif"
+               label="%action.label"
+               menubarPath="org.eclipse.acceleo.module.menu/acceleo"/>
+         <action
+               class="com.tts.umap.ui.popupMenus.StartExportWizard"
+               enablesFor="0"
+               icon="icons/default.gif"
+               id="com.tts.abap2uml.ui.action1"
+               label="%export.label"
+               menubarPath="org.eclipse.acceleo.module.menu/acceleo">
+         </action>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.tts.umap.ui.preferences.UMAPPreferencePage"
+            id="com.tts.umap.ui.preferences.UMAPPreferencePage"
+            name="%page.name">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.tts.umap.ui.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+</plugin>

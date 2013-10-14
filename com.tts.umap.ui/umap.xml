@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://research.sun.com/wadl/2006/10 wadl.xsd" xmlns="http://research.sun.com/wadl/2006/10">
+<resources base="http://somewhere.new/">
+<resource path="umap">
+<method name="GET">
+<request/>
+<response>
+<representation mediaType="application/xml" element="services"/>
+</response>
+</method>
+</resource>
+<resource path="umap/transportRequests">
+<method name="GET">
+<response>
+<representation mediaType="application/xml" element="requests"/>
+<fault status="404"/>
+</response>
+</method>
+</resource>
+<resource path="umap/developmentClasses">
+<param name="newParam" type="xsd:string" style="query"/>
+<method name="GET">
+<request>
+<param name="newParam" type="xsd:string" style="query"/>
+<representation mediaType="application/xml" element="developmentClass">
+<param name="newParam" type="xsd:string" style="query"/>
+</representation>
+</request>
+<response/>
+</method>
+</resource>
+</resources>
+</application>
