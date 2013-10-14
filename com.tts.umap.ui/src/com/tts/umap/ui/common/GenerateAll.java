@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package com.tts.umap.ui.common;
+package com.tts.umap.ui.common; 
 
 import java.io.File;
 import java.io.IOException;

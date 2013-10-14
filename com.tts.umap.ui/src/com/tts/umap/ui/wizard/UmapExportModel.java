@@ -29,7 +29,7 @@ public class UmapExportModel {
 			System.out.println(Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.P_CLASS_NAME) + " URL of Preference Page");
 //			connection = (HttpURLConnection) uri.openConnection(); +
 		setCanFinish(false);
-	}
+	} 
 	
 	public void queryTransportRequests() throws MalformedURLException, IOException{
 		UmapRestClient client = new UmapRestClient(Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.P_URI));

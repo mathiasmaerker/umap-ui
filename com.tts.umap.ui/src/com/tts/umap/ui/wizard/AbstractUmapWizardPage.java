@@ -18,7 +18,7 @@ public abstract class AbstractUmapWizardPage extends WizardPage {
 	}
 	
 	protected abstract void saveDateToModel();
-	protected abstract void onEnterPage();
+	protected abstract void onEnterPage(); 
 	
 	protected void applyErrorMessage(IStatus status) {
 		String message = status.getMessage();

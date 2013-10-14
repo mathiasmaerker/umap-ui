@@ -41,7 +41,7 @@ public class FinishPage extends AbstractUmapWizardPage {
 
 		// create the desired layout for this wizard page
 		GridLayout gl = new GridLayout();
-		int ncol = 2;
+		int ncol = 2; 
 		gl.numColumns = ncol;
 		composite.setLayout(gl);
 

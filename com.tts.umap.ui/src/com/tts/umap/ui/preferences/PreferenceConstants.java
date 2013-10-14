@@ -23,5 +23,5 @@ public class PreferenceConstants {
 	
 	public static final String P_USER_NAME = "userName";
 	
-	public static final String P_PWD = "pwd";
+	public static final String P_PWD = "pwd"; 
 }

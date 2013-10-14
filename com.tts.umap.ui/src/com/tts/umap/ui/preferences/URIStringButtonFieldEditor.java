@@ -16,7 +16,7 @@ public class URIStringButtonFieldEditor extends StringButtonFieldEditor {
 		super(name, labelText, parent);
 		setChangeButtonText("Test Service");
 	}
-	
+	 
 	
 	@Override
 	protected String changePressed() {

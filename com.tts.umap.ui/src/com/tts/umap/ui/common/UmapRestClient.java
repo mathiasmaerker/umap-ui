@@ -14,7 +14,7 @@ import com.tts.umap.ui.Activator;
 import com.tts.umap.ui.preferences.PreferenceConstants;
 
 
-public class UmapRestClient {
+public class UmapRestClient { 
 
 	private HttpURLConnection connection;
 	private String baseUrl;

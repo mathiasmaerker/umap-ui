@@ -23,7 +23,7 @@ import com.tts.umap.ui.Activator;
  * <p>
  * This page is used to modify preferences only. They
  * are stored in the preference store that belongs to
- * the main plug-in class. That way, preferences can
+ * the main plug-in class. That way, preferences can 
  * be accessed directly via the preference store.
  */
 

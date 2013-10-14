@@ -36,7 +36,7 @@ import com.tts.umap.ui.Activator;
 import com.tts.umap.ui.common.GenerateAll;
 
 /**
- * Abap2uml code generation.
+ * Abap2uml code generation. 
  */
 public class AcceleoGenerateAbap2umlAction extends ActionDelegate implements IActionDelegate {
 	

@@ -13,7 +13,7 @@ import org.eclipse.ui.IWorkbenchPart;
 import com.tts.umap.ui.wizard.UmapExportWizard;
 
 /**
- * @author MaerkerMa
+ * @author MaerkerMa 
  *
  */
 public class StartExportWizard implements IObjectActionDelegate {

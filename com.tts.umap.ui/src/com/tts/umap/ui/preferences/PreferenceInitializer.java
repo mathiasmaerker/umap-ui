@@ -25,4 +25,4 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 		store.setDefault(PreferenceConstants.P_PROJ_NAME, "");
 	}
 
-}
+} 

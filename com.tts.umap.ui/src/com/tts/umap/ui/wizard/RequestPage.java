@@ -32,7 +32,7 @@ public class RequestPage extends AbstractUmapWizardPage {
 		setTitle("UMAP Export to SAP");
 		setDescription("Select Transport Request and Development Class");
 		
-	}
+	} 
 
 	/**
 	 * @param pageName

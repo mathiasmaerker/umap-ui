@@ -35,7 +35,7 @@ public class PackageSelectPage extends AbstractUmapWizardPage implements
 		setDescription("Specifiy Package");
 		packageStatus = new Status(IStatus.OK, "not_used", 0, "", null);
 	}
-
+ 
 	public PackageSelectPage(String pageName) {
 		super(pageName);
 		setTitle("UMAP Export to SAP");
